@@ -2,10 +2,12 @@
 
 ## Development
 
-- build: `pnpm run /^build:*/`,
-- run dev server: `pnpm run /^dev:*/`,
+- build: `pnpm run /^build:*/`
+- run dev server: `pnpm run /^dev:*/`
 - preview: `pnpm run preview`
-- lint & formatter: WIP
+- lint & formatter: `pnpm run /^check:*/`
+  - JS only: `pnpm run check:js` ([biome](https://biomejs.dev))
+  - CLJS only: `pnpm run check:cljs` ([joker](https://github.com/candid82/joker))
 
 ## Libraries
 

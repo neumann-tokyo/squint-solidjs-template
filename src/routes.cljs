@@ -1,8 +1,8 @@
 (ns routes
-  (:require [pages.home :refer [Home]]
+  (:require [errors.not-found :refer [NotFound]]
             [pages.about :refer [About]]
-            [errors.not-found :refer [NotFound]]
-            [pages.about-data :refer [AboutData]]))
+            [pages.about-data :refer [AboutData]]
+            [pages.home :refer [Home]]))
 
 (def routes
   [{:path "/"

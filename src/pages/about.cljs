@@ -1,6 +1,6 @@
 (ns pages.about
-  (:require ["solid-js" :refer [createEffect Suspense]]
-            [pages.about-data :refer [AboutData]]))
+  (:require [pages.about-data :refer [AboutData]]
+            ["solid-js" :refer [createEffect Suspense]]))
 
 (defn About []
   (let [name (AboutData)]

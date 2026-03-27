@@ -1,9 +1,9 @@
 {
-  "linter": {
-    "rules": {
-      "correctness": {
-        "noUnusedImports": "off"
-      }
-    }
-  }
+	"linter": {
+		"rules": {
+			"correctness": {
+				"noUnusedImports": "off"
+			}
+		}
+	}
 }

@@ -1,6 +1,6 @@
 (ns app
-  (:require ["solid-js" :refer [Suspense]]
-            ["@solidjs/router" :as router]))
+  (:require ["@solidjs/router" :as router]
+            ["solid-js" :refer [Suspense]]))
 
 (def ALink (.-A router))
 

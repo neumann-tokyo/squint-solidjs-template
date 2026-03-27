@@ -1,9 +1,9 @@
 (ns main
-  (:require ["solid-js/web" :refer [render]]
-            ["@picocss/pico/css/pico.lime.css"]
+  (:require ["@picocss/pico/css/pico.lime.css"]
             ["@solidjs/router" :refer [Router]]
+            [app :refer [App]]
             [routes :refer [routes]]
-            [app :refer [App]]))
+            ["solid-js/web" :refer [render]]))
 
 (def root (js/document.getElementById "root"))
 

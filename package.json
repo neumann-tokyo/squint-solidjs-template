@@ -1,30 +1,31 @@
 {
-  "name": "squint-solidjs-template",
-  "version": "0.0.1",
-  "private": true,
-  "type": "module",
-  "description": "",
-  "engines": {
-    "pnpm": ">=8.0.0"
-  },
-  "scripts": {
-    "dev:squint": "squint watch",
-    "dev:vite": "vite --config vite.config.js public",
-    "build:squint": "squint compile",
-    "build:vite": "vite --config vite.config.js build public",
-    "preview": "vite --config vite.config.js preview public",
-    "check:js": "biome check --write public/js"
-  },
-  "license": "AGPL v3.0",
-  "devDependencies": {
-    "@biomejs/biome": "2.4.9",
-    "squint-cljs": "^0.10.186",
-    "vite": "^7.1.4",
-    "vite-plugin-solid": "^2.11.11"
-  },
-  "dependencies": {
-    "@picocss/pico": "^2.1.1",
-    "@solidjs/router": "^0.15.1",
-    "solid-js": "^1.9.5"
-  }
+	"name": "squint-solidjs-template",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"description": "",
+	"engines": {
+		"pnpm": ">=8.0.0"
+	},
+	"scripts": {
+		"dev:squint": "squint watch",
+		"dev:vite": "vite --config vite.config.js public",
+		"build:squint": "squint compile",
+		"build:vite": "vite --config vite.config.js build public",
+		"preview": "vite --config vite.config.js preview public",
+		"check:js": "biome check --write .",
+		"check:cljs": "bash cljs-lint-format.bash"
+	},
+	"license": "AGPL v3.0",
+	"devDependencies": {
+		"@biomejs/biome": "2.4.9",
+		"squint-cljs": "^0.10.186",
+		"vite": "^7.1.4",
+		"vite-plugin-solid": "^2.11.11"
+	},
+	"dependencies": {
+		"@picocss/pico": "^2.1.1",
+		"@solidjs/router": "^0.15.1",
+		"solid-js": "^1.9.5"
+	}
 }
