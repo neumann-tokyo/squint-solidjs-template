@@ -1,8 +1,20 @@
-(ns components.flex)
+(ns components.flex
+  (:require ["valibot" :as v]))
 
-;; TODO 引数のパラメータをバリデーションする
+;; TODO 引数のパラメータをバリデーションする (valibotで)
+
+(def flex-props-schema
+  (.pipe v
+         (.number v)))
+
+(defn check-props [props schema]
+  (if (-> import .-meta .-env .-DEV)
+    (let [result (.safeParse v schema props)]
+      (.-success result))
+    true))
 
 (defn Flex [props]
+  {:pre [(check-props props flex-props-schema)]}
   (let [style {:display "flex"
                :align-content (when (:align-content props) (:align-content props))
                :align-items (when (:align-items props) (:align-items props))
