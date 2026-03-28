@@ -8,20 +8,20 @@
         flex-direction-enum (.picklist v ["row" "row-reverse" "column" "column-reverse"])
         flex-wrap-enum (.picklist v ["nowrap" "wrap" "wrap-reverse"])
         justify-content (.picklist v ["flex-start" "flex-end" "center" "space-between" "space-around" "space-evenly"])]
-    (.object v {:align-context (.optiona v align-content-enum)
-                :align-items  (.optiona v align-items-enum)
-                :flex-direction  (.optiona v flex-direction-enum)
-                :flex-wrap  (.optiona v flex-wrap-enum)
-                :justify-content  (.optiona v justify-content)
-                :gap  (.optiona v (.string v))
-                :row-gap  (.optiona v (.string v))
-                :column-gap  (.optiona v (.string v))
+    (.object v {:align-context (.optional v align-content-enum)
+                :align-items  (.optional v align-items-enum)
+                :flex-direction  (.optional v flex-direction-enum)
+                :flex-wrap  (.optional v flex-wrap-enum)
+                :justify-content  (.optional v justify-content)
+                :gap  (.optional v (.string v))
+                :row-gap  (.optional v (.string v))
+                :column-gap  (.optional v (.string v))
 
-                :height  (.optiona v (.string v))
-                :width  (.optiona v (.string v))
+                :height  (.optional v (.string v))
+                :width  (.optional v (.string v))
 
-                :margin  (.optiona v (.string v))
-                :padding  (.optiona v (.string v))})))
+                :margin  (.optional v (.string v))
+                :padding  (.optional v (.string v))})))
 
 (defn Flex [props]
   {:pre [(check-props props flex-props-schema)]}
