@@ -9,7 +9,7 @@
         [:nav
          [:ul
           [:li
-           [:strong "YenMa"]]]
+           [:strong "Squint SolidJS Template"]]]
          [:ul
           [:li
            [ALink {:href "/"} "Home"]
