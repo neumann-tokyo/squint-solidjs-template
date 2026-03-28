@@ -32,3 +32,6 @@ public/js/
 
 # tasks
 docs/tasks
+
+# clojurescript
+.clj-kondo
