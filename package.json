@@ -16,7 +16,7 @@
 		"check:js": "biome check --write .",
 		"check:cljs": "bash cljs-lint-format.bash"
 	},
-	"license": "AGPL v3.0",
+	"license": "MIT License",
 	"devDependencies": {
 		"@biomejs/biome": "2.4.9",
 		"squint-cljs": "^0.10.186",
